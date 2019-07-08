@@ -12,7 +12,7 @@ namespace MVCMovie.Controllers
         {
             return View();
         }
-        //test
+     
 
         public ActionResult About()
         {
@@ -27,6 +27,6 @@ namespace MVCMovie.Controllers
 
             return View();
         }
-        //
+     
     }
 }
