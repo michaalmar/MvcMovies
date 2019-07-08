@@ -27,7 +27,11 @@ namespace MVCMovie.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Movie movie = db.Movies.Find(id);
+
+            Movie movie = db.Movies.Where(a => a.ID == id).FirstOrDefault();
+
+
+
             if (movie == null)
             {
                 return HttpNotFound();
